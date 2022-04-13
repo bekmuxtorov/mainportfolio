@@ -99,7 +99,7 @@ aside  p{
     margin-left:300px;
     padding-top: 60px;
     padding-left: 30px;
-    padding-bottom: 300px;
+    padding-bottom: 30px;
 }
 .sub-title p{
     margin-bottom: 15px;
@@ -154,4 +154,29 @@ aside  p{
 .about-item p{
     font-size:16px;
     font-weight: 500;
+}
+/* hire section */
+.hire{
+    margin-left:340px;
+    padding: 30px;
+    background-color: #f9bf3f;
+    transition: all 0.7s ;
+}
+.hire h2{
+    font-size: 18px;
+    font-weight:400;
+    color: #000;
+    letter-spacing: 1px;
+    line-height: 1.6;
+    
+}
+.hire-btn{
+    background-color: #f9bf3f;
+    padding: 1px 4px;
+    font-family: "Quicksand", Arial, sans-serif;
+
+}   
+.hire:hover{
+    box-shadow: 0px 0px 10px 5px #01ff19 !important;
+    transform: scale(1.05);
 }
