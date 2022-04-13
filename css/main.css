@@ -4,9 +4,11 @@
     font-family:sans-serif
 }
 .container{
-
-    width: 90%;
-    margin: 0 auto;
+    width: 70% !important;
+}
+.box{
+    display: flex;
+    flex-direction: row;
 }
 aside{
     position: fixed;
@@ -33,6 +35,8 @@ aside  p{
 .nav{
     text-align: center;
     padding-left: 0;
+    display: flex;
+    flex-direction: column;
 }
 .nav-item{
     list-style: none;
@@ -57,11 +61,12 @@ aside  p{
 /* hero section */
 
 .hero{
-    margin-left: 340px;
+    margin-left: 300px;
     background-image:url(/images/image2.webp) ;
     background-position: no-repeat;
     background-size: cover;
     height: 100vh;
+    margin-bottom: 150px;
 }
 .hero-description{
     position: relative;
@@ -75,7 +80,7 @@ aside  p{
     font-weight: 400;
     letter-spacing: 2px;
     color: #797979;
-/* }
+}
 .hero-description h1{
     letter-spacing: 2px;
     margin-top: 16px;
@@ -86,6 +91,67 @@ aside  p{
 } */
 .hero-description p{
     color: #797979;
-    font-size:20px ;
+    font-size:20px;
+}
 
+/* about us */
+.about{
+    margin-left:300px;
+    padding-top: 60px;
+    padding-left: 30px;
+    padding-bottom: 300px;
+}
+.sub-title p{
+    margin-bottom: 15px;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #999999;
+    font-weight: 500;
+    letter-spacing:5px
+}
+.sub-title h3{
+    font-style: 18px;
+    font-weight: 600;
+    text-transform:uppercase;
+    letter-spacing: 5px;
+    line-height: 1.8;
+    position: relative;
+    margin-bottom: 4rem;
+}
+.about-description > p{
+    color: #797979;
+    opacity: 0.7;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 1.6;
+}
+.about-description p span{
+    color: black;
+    font-weight: 600;
+}
+.about-items{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around ;
+    margin-top: 90px;
+}
+.about-item{
+    padding-top:24px !important;
+    padding-left: 28px !important;
+    padding-right: 28px !important;
+    border-bottom: 3px solid rgb(218, 218, 20);
+    transition: all 0.5s !important;
+}
+
+.about-item:hover{
+    box-shadow: 0px 0px 10px 5px #01ff19 !important;
+    transform: scale(1.05);
+}
+.about-item i{
+    padding-bottom: 20px;
+    color: rgb(218, 218, 20);
+}
+.about-item p{
+    font-size:16px;
+    font-weight: 500;
 }
