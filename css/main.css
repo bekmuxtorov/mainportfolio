@@ -7,8 +7,8 @@
     width: 70% !important;
 }
 .box{
-    display: flex;
-    flex-direction: row;
+    display: flex !important;
+    flex-direction: row !important;
 }
 aside{
     position: fixed;
@@ -58,15 +58,18 @@ aside  p{
     font-size: 18px !important;
 }
 
+/* contact setion */
+.contect{
+    margin-left: 300px;
+}
 /* hero section */
 
 .hero{
-    margin-left: 300px;
     background-image:url(/images/image2.webp) ;
     background-position: no-repeat;
     background-size: cover;
     height: 100vh;
-    margin-bottom: 150px;
+    background-color: #fff;
 }
 .hero-description{
     position: relative;
@@ -96,9 +99,9 @@ aside  p{
 
 /* about us */
 .about{
-    margin-left:300px;
+    padding-left:30px;
+    background-color: #fff;
     padding-top: 60px;
-    padding-left: 30px;
     padding-bottom: 30px;
 }
 .sub-title p{
@@ -110,11 +113,11 @@ aside  p{
     letter-spacing:5px
 }
 .sub-title h3{
-    font-style: 18px;
+    font-size: 14px;
     font-weight: 600;
     text-transform:uppercase;
-    letter-spacing: 5px;
-    line-height: 1.8;
+    letter-spacing: 2px;
+    line-height: 1.;
     position: relative;
     margin-bottom: 4rem;
 }
@@ -137,15 +140,16 @@ aside  p{
 }
 .about-item{
     padding-top:24px !important;
-    padding-left: 28px !important;
-    padding-right: 28px !important;
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+    margin-right: 10px;
     border-bottom: 3px solid rgb(218, 218, 20);
     transition: all 0.5s !important;
 }
 
 .about-item:hover{
     box-shadow: 0px 0px 10px 5px #01ff19 !important;
-    transform: scale(1.05);
+    transform: scale(1.05) !important;
 }
 .about-item i{
     padding-bottom: 20px;
@@ -157,10 +161,10 @@ aside  p{
 }
 /* hire section */
 .hire{
-    margin-left:340px;
     padding: 30px;
     background-color: #f9bf3f;
-    transition: all 0.7s ;
+    transition: all 0.7s;
+
 }
 .hire h2{
     font-size: 18px;
@@ -179,4 +183,66 @@ aside  p{
 .hire:hover{
     box-shadow: 0px 0px 10px 5px #01ff19 !important;
     transform: scale(1.05);
+}
+
+/* services section */
+.services{
+    padding-top: 60px;
+    padding-left: 30px;
+    background-color: #fff;
+}
+.services-items{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-left: -30px;
+}
+.services-item{
+    width: 24%;
+    margin: 30px;
+    padding: 15px;
+    text-align: center;
+    background-color: #fff;
+    transition: all 0.7s;
+    border-bottom:3px solid green; 
+}
+
+.services-item:hover{
+    box-shadow: 0px 0px 10px 5px #01ff19 !important;
+    transform: scale(1.05);
+}
+.services-item h3{
+    font-size: 14px;
+    font-weight: 700;
+}
+.services-item p{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.7;
+    padding-top: 20px;
+}
+.fig{
+    position: relative;
+    left: 38%;
+    top: -30px;
+    background-color:#797979 ;
+    width: 40px;
+    height: 40px;
+}
+
+.background{
+    width: 60vh;
+    overflow: ;
+}
+.background img{
+    width: 61vw;
+    
+    position: fixed;
+    top: 100px;
+    z-index: -1;
+    left: 340px;
+}
+.oyna{
+    height: 50px;
+    padding-bottom: 500px;
 }
