@@ -102,7 +102,7 @@ aside  p{
     padding-left:30px;
     background-color: #fff;
     padding-top: 60px;
-    padding-bottom: 30px;
+    padding-bottom: 120px;
 }
 .sub-title p{
     margin-bottom: 15px;
@@ -164,7 +164,6 @@ aside  p{
     padding: 30px;
     background-color: #f9bf3f;
     transition: all 0.7s;
-
 }
 .hire h2{
     font-size: 18px;
@@ -188,6 +187,7 @@ aside  p{
 /* services section */
 .services{
     padding-top: 60px;
+    padding-bottom: 135px;
     padding-left: 30px;
     background-color: #fff;
 }
@@ -233,8 +233,8 @@ aside  p{
 /* skills section */
 .skills{
     padding-left: 30px;
-    padding-top: 210px;
-    padding-bottom: 210px;
+    padding-top: 60px;
+    padding-bottom: 135px;
 }
 .skills-item{
     padding-top: 40px;
@@ -317,4 +317,92 @@ aside  p{
     content: "";
     border-radius: 50%;
     top: -3px;
+}
+
+/* education */
+.education{ 
+    padding-left: 30px;
+    padding-bottom: 135px;
+    padding-top: 60px;
+}
+.color-grey{
+    background-color: #f2f3f7 !important;
+}
+/* experince */
+.experience{
+    padding-left: 30px;
+    position: relative;
+    padding-top: 60px;
+    
+}
+.experience-items{
+    padding-top: 30px;
+    padding-left: 50px;
+    
+}
+.experience-item{
+    background-color: #f2f3f7;
+    padding: 20px;
+    margin-bottom: 10px;
+    position:relative;
+}
+.experience-item h3{
+    font-size:18px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.experience-item h3 span{
+    font-size: 14px;
+    opacity: .4;
+}
+.experience-item p{
+    color: #797979;
+    opacity: 1;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 1.6;
+}
+.experience-item p:before{
+    content: " ";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 25px;
+    left: -10px;
+    border-style:solid;
+    border-width: 9px 9px 9px 0;
+    border-color: transparent #f2f3f7 transparent transparent;
+}
+.experience-items:before{
+    content: " ";
+    width: 4px;
+    height: 100%;
+    position: absolute;
+    background-color: #f2f3f7;
+    left:38px;
+}
+.experience-item h3:before{
+    content: " ";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: -57px;
+    background-color: #2c98f0;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 3px  rgb(221 221 221);
+    animation-name: box;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-cubic-bezier(0.06, 0.21, 0.77, 0.94);
+    animation-iteration-count: infinite;
+}
+
+@keyframes box{
+    0%{
+        box-shadow: 0px 0px 0px 3px  rgb(221 221 221);
+    }
+    100%{
+        box-shadow: 0px 0px 10px 10px  chartreuse;
+        transform: scale(1.05);
+        
+    }
 }
