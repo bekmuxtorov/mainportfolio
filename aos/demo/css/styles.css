@@ -18,8 +18,8 @@ body {
   display: inline-block;
   float: left;
   width: 33.3333%;
-  height: 300px;
-  padding: 20px;
+  height: 18.75rem;
+  padding: 1.25rem;
 }
 
 .aos-item__inner {
