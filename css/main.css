@@ -19,6 +19,8 @@ aside{
     padding-bottom: 2.5rem;
     float: left;
     height: 100vh;
+    z-index: 9;
+    transition: all 0.5s;
 }
 aside img{
     padding-top: 1.25rem;
@@ -40,7 +42,9 @@ aside  p{
 .nav-item{
     list-style: none;
     padding-top: 0.4375rem;
+    
 }
+
 .nav-item a:hover{
     color: chartreuse;
     transition: 0.4s;
@@ -50,7 +54,7 @@ aside  p{
    text-transform: uppercase;
    font-size: 0.875rem;
    padding-top: 4px;
-   color: black;
+   color: black ;
 }
 .footer{
     margin-top: 1.25rem;
@@ -59,7 +63,8 @@ aside  p{
 
 /* contact setion */
 .contect{
-    margin-left: 16.875rem;
+    margin-left: 18.75rem;
+    width: 90%;
 }
 /* hero section */
 
@@ -586,9 +591,24 @@ form textarea{
     min-height:9.375rem  ; 
 }
 #check{
-    display:relative;
-    right: 0;
+    display:none;
     z-index: 10;
+    
+}
+.checkbtn{
+    display: none;
+    font-size:18px;
+    transform: rotate(90deg) !important;
+    padding-left: 60px;
+}
+.menu{
+    width: 100%;
+    position: fixed;
+    background-color:#fff;
+    z-index: 10;
+    min-height: 40px;
+    
+    
 }
 
 
@@ -599,7 +619,6 @@ form textarea{
     100%{
         box-shadow: 0px 0px 0.625rem 0.625rem  chartreuse;
         transform: scale(1.05);
-        
     }
 }
 
@@ -607,22 +626,25 @@ form textarea{
 @media only screen and (max-width: 768px){
     aside{
         display: none;
+        width: 100%;
     }
     .contect{
-        margin-left: 0;
+        margin: 0 auto;
+
     }
     .checkbtn{
-        display: block;
+        display: inline;
     }   
-    .nav a{
-        color: azure !important;
-    }
 
     #check:checked ~ ul{
-        right: 0;
+        left: 0;
     }
     #check:checked ~ aside{
         display: block;
     }
+    
 
+    .services, .hero , .about, .skills, .education, .experience, .work, .blog, .contact{
+        padding-left: 0;
+    }
 }
