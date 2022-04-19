@@ -199,7 +199,7 @@ aside  p{
 .services-items{
     display:flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
     margin-left: -1.875rem;
 }
 .services-item{
@@ -644,7 +644,40 @@ form textarea{
     }
     
 
-    .services, .hero , .about, .skills, .education, .experience, .work, .blog, .contact{
+    .services,
+    .hero, 
+    .about, 
+    .skills, 
+    .education,
+    .experience, 
+    .work, 
+    .blog,
+    .contact{
         padding-left: 0;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .services-item{
+        width: 80%;
+    }
+    .fig{
+        left: 45%;
+    }
+    .blog-items{
+        flex-direction: column;
+
+    }
+    .blog-item{
+        margin-bottom:20px;
+    }
+    .contact-items{
+        flex-direction: column;
+    }
+    .contact-items div{
+        width: 100%;
+    }
+    form input,textarea{
+        margin-left: 0;
     }
 }
