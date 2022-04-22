@@ -25,6 +25,8 @@ aside{
 aside img{
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
+    width:128px;
+    border-radius: 50%;
 }
 aside h3{
     margin:  0.625rem;
@@ -185,8 +187,7 @@ aside  p{
 
 }   
 .hire:hover{
-    box-shadow: 0px 0px 0.625rem 5px #01ff19 !important;
-    transform: scale(1.05);
+    transform: scale(1.005);
 }
 
 /* services section */
@@ -599,14 +600,17 @@ form textarea{
     display: none;
     font-size:18px;
     transform: rotate(90deg) !important;
-    padding-left: 60px;
+    position: relative;
+    top: 1rem;
+    left: 1.875rem;
 }
 .menu{
     width: 100%;
     position: fixed;
     background-color:#fff;
     z-index: 10;
-    min-height: 40px;
+    min-height: 60px;
+    display: none;
     
     
 }
@@ -640,6 +644,9 @@ form textarea{
         left: 0;
     }
     #check:checked ~ aside{
+        display: block;
+    }
+    .menu{
         display: block;
     }
     
@@ -679,5 +686,8 @@ form textarea{
     }
     form input,textarea{
         margin-left: 0;
+    }
+    .about-items{
+        flex-direction: column;
     }
 }

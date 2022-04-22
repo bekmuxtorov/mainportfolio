@@ -5,8 +5,8 @@ var typed = new Typed(".animation", {
         'Frontend Developer',
         'Freelancer'
     ],
-    typeSpeed:80,
-    backSpeed:80,
+    typeSpeed:75,
+    backSpeed:75,
     loop:true,
 
   });
