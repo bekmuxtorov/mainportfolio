@@ -44,7 +44,9 @@ aside  p{
 .nav-item{
     list-style: none;
     padding-top: 0.4375rem;
-    
+}
+.active{
+    color: chartreuse !important;
 }
 
 .nav-item a:hover{
@@ -500,13 +502,7 @@ aside  p{
 .button a{
     color:#01ff19 ;
 }
-.button:hover{
-     background-color: #01ff19;
-     
-}
-.button:hover a{
-    color: #2c98f0;
-}
+
 
 /* Blog section */
 .blog{
@@ -519,10 +515,12 @@ aside  p{
     margin-bottom: 1.875rem;
 }
 .blog-item{
-    width:;
-    margin-right: 1.25rem;
+
     overflow: hidden;
     transition: all 0.5s !important;
+}
+.blog-item:not(:last-child){
+    margin-right: 1.25rem;
 }
 .blog-image{
     transition: all 0.5s;
@@ -611,11 +609,20 @@ form textarea{
     z-index: 10;
     min-height: 60px;
     display: none;
-    
-    
 }
 
-
+.hvr-bounce-to-right {
+    display: inline-block !important;
+    vertical-align: middle ;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgb(0 0 0 / 0%);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
 @keyframes box{
     0%{
         box-shadow: 0px 0px 0px 3px  rgb(221 221 221);
@@ -631,6 +638,10 @@ form textarea{
     aside{
         display: none;
         width: 100%;
+        left: 0;
+        padding-top: 57px;
+        padding-left: 0;
+        padding-right: 0;
     }
     .contect{
         margin: 0 auto;
